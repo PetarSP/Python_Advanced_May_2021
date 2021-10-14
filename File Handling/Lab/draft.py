@@ -1,0 +1,1 @@
+file = open("draf2", "w")
