@@ -37,7 +37,7 @@ while not number_of_turns == 0:
     command = input()
     next_player_row, next_player_col = player_row + player_movement[command][0], \
                                        player_col + player_movement[command][1]
-    if is_in_range(next_player_row,next_player_col,size):
+    if is_in_range(next_player_row, next_player_col, size):
         if not matrix[next_player_row][next_player_col] == "-":
             initial_str += matrix[next_player_row][next_player_col]
             matrix[next_player_row][next_player_col] = "-"
@@ -52,4 +52,4 @@ while not number_of_turns == 0:
 
 print(initial_str)
 for row in matrix:
-    print(''.join(str(x)for x in row))
+    print(''.join(str(x) for x in row))
